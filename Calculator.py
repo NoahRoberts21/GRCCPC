@@ -10,7 +10,7 @@ Type the Operation You'd like to Perform
 * for multiplication
 / for division
 ** for raising to a power
-root for finding the nth root of a number
+// for finding the nth root of a number
 """)
 
     number_1 = int(input("Enter First Number: "))
@@ -42,7 +42,7 @@ root for finding the nth root of a number
         print(float(number_1 ** number_2))
         
     # Roots
-    elif operation == "root":
+    elif operation == "//":
         print("{} root {} = " .format(number_1, number_2))
         print(number_1 **(1.0/float(number_2)))
 
