@@ -5,16 +5,20 @@ def welcome():
 def calculate():
     operation = input("""
 Type the Operation You'd like to Perform
-+ for addition
-- for subtraction
-* for multiplication
-/ for division
-** for raising to a power
-// for finding the nth root of a number
+ + for addition
+ - for subtraction
+ * for multiplication
+ / for division
+ ** for raising to a power
+ // for finding the nth root of a number
 """)
 
-    number_1 = int(input("Enter First Number: "))
-    number_2 = int(input("Enter Second Number: "))
+    try:
+        number_1 = int(input("Enter First Number: "))
+        number_2 = int(input("Enter Second Number: "))
+    except ValueError:
+        print("Put in a number, fucknut.")
+        calculate()
 
     # Addition
     if operation == "+":
@@ -48,6 +52,7 @@ Type the Operation You'd like to Perform
 
     else:
         print("You gotta type in one of the six options, idiot.")
+        
 
     again()
 
@@ -66,6 +71,7 @@ Please type "Yes" or "No."
         print("Learn how to do math in your head, moron")
 
     else:
+        print('Please Type either "Yes" or "No" ')
         again()
 
 
