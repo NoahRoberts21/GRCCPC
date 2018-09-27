@@ -1,7 +1,5 @@
 def welcome():
-    print("""
-Y'all ready to do some basic ass math?
-""")
+    print("Y'all ready to do some math?")
 
 
 def calculate():
