@@ -1,4 +1,3 @@
-
 def welcome():
     print("""
 Y'all ready to do some basic ass math?
@@ -12,6 +11,7 @@ Type the Operation You'd like to Perform
 - for subtraction
 * for multiplication
 / for division
+** for raising to a power
 """)
 
     number_1 = int(input("Enter First Number: "))
@@ -36,9 +36,14 @@ Type the Operation You'd like to Perform
     elif operation == "/":
         print("{} / {} = " .format(number_1, number_2))
         print(number_1 / number_2)
+       
+    # Powers 
+    elif operation == "**":
+        print("{} ** {} = " .format(number_1, number_2))
+        print(number_1 ** number_2)
 
     else:
-        print("You gotta type in one of the four options, idiot.")
+        print("You gotta type in one of the five options, idiot.")
 
     again()
 
@@ -62,5 +67,3 @@ Please type "Yes" or "No."
 
 welcome()
 calculate()
-
-
