@@ -11,6 +11,7 @@ Type the Operation You'd like to Perform
 - for subtraction
 * for multiplication
 / for division
+root for finding the nth root of a number
 ** for raising to a power
 """)
 
@@ -41,9 +42,14 @@ Type the Operation You'd like to Perform
     elif operation == "**":
         print("{} ** {} = " .format(number_1, number_2))
         print(number_1 ** number_2)
+        
+    # Roots
+    elif operation == "root":
+        print("{} root {} = " .format(number_1, number_2))
+        print(number_1 **(1.0/float(number_2)))
 
     else:
-        print("You gotta type in one of the five options, idiot.")
+        print("You gotta type in one of the six options, idiot.")
 
     again()
 
