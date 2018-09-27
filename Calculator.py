@@ -11,8 +11,8 @@ Type the Operation You'd like to Perform
 - for subtraction
 * for multiplication
 / for division
-root for finding the nth root of a number
 ** for raising to a power
+root for finding the nth root of a number
 """)
 
     number_1 = int(input("Enter First Number: "))
@@ -21,27 +21,27 @@ root for finding the nth root of a number
     # Addition
     if operation == "+":
         print("{} + {} = " .format(number_1, number_2))
-        print(number_1 + number_2)
+        print(float(number_1 + number_2))
 
     # Subtraction
     elif operation == "-":
         print("{} - {} = " .format(number_1, number_2))
-        print(number_1 - number_2)
+        print(float(number_1 - number_2))
 
     # Multiplication
     elif operation == "*":
         print("{} * {} = " .format(number_1, number_2))
-        print(number_1 * number_2)
+        print(float(number_1 * number_2))
 
     # Division
     elif operation == "/":
         print("{} / {} = " .format(number_1, number_2))
-        print(number_1 / number_2)
+        print(float(number_1 / number_2))
        
     # Powers 
     elif operation == "**":
         print("{} ** {} = " .format(number_1, number_2))
-        print(number_1 ** number_2)
+        print(float(number_1 ** number_2))
         
     # Roots
     elif operation == "root":
